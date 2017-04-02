@@ -1,0 +1,1 @@
+pkg load image;% Load the imageimg = double(imread('octagon.png')) / 255;imshow(img);% Compute x, y gradients[gx gy] = imgradientxy(img, 'sobel');imshow((gx + 4) / 8);
